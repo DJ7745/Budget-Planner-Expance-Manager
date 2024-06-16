@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Budget Planner</string>
+    <string name="add_budget">  Add Budget</string>
+    <string name="budget_name">Budget Name</string>
+    <string name="period">Period</string>
+    <string name="delete_budget">Delete budget</string>
+    <string name="Add_expense">Add Expense</string>
+</resources>

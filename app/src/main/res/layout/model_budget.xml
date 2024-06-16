@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:elevation="15dp"
+    tools:ignore="SmallSp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:id="@+id/budget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/days_one"
+            android:text="budget_name"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/budget_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:fontFamily="@font/space_mono"
+            android:textSize="10sp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/budget_name"
+            app:layout_constraintTop_toBottomOf="@+id/budget_name" />
+
+        <ImageView
+            android:id="@+id/img_open_budget_in_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_show_more"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/amt_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="3000/-"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/budget_name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Remain To Spend :"
+            android:textSize="16sp"
+            android:textColor="@color/blue"
+            app:layout_constraintEnd_toStartOf="@+id/amt_pending"
+            app:layout_constraintTop_toTopOf="@+id/amt_pending" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_model"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <LinearLayout
+            android:id="@+id/income_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/income_expense_strok_bg"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar_model">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="24sp"
+                android:textColor="@color/green"
+                android:paddingStart="16sp"
+                android:gravity="center_vertical"
+                android:text="Income"/>
+            <TextView
+                android:id="@+id/income_total_amt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="24sp"
+                android:textColor="@color/green"
+                android:gravity="center_vertical"
+                android:text="15000"/>
+            <ImageView
+                android:id="@+id/add_income_img"
+                android:paddingTop="4dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_income_btn_design"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/income_expense_strok_bg"
+            app:layout_constraintTop_toBottomOf="@+id/income_layout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="24sp"
+                android:textColor="@color/red"
+                android:paddingStart="16sp"
+                android:gravity="center_vertical"
+                android:text="Expense"/>
+            <TextView
+                android:id="@+id/expense_total_amt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="24sp"
+                android:textColor="@color/red"
+                android:gravity="center_vertical"
+                android:text="15000"/>
+            <ImageView
+                android:id="@+id/add_expense_img"
+                android:paddingTop="4dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_expense_btn_design"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

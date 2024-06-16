@@ -1,0 +1,26 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/drawable/ic_add_white.xml" value="0.107" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/drawable/ic_warning.xml" value="0.1" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/drawable/income_expense_strok_bg.xml" value="0.1" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/activity_budget_view.xml" value="0.2" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/add_budget_lauout.xml" value="0.25" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/add_expense_layout.xml" value="0.25" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/add_income_layout.xml" value="0.25" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/model_budget.xml" value="0.25" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/model_expense.xml" value="0.25" />
+        <entry key="..\:/Users/dhruv/Desktop/Android Projects/BudgetPlanner/app/src/main/res/layout/model_income.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
